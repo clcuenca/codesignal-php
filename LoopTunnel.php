@@ -48,3 +48,22 @@ function countSumOfTwoRepresentations2($n, $l, $r) {
 	return $count;
 
 }
+
+function magicalWell($a, $b, $n) {
+    
+
+    $salary = 0;
+
+    while($n > 0) {
+
+        $salary += $a * $b;
+
+        $a++;
+        $b++;
+        $n--;
+
+    }
+
+    return $salary;
+
+}
